@@ -1,0 +1,46 @@
+.hover-container{
+  position: relative; /* Para que se posicionen relativo a este container */
+  width: 450px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hover-text{
+  position: absolute; 
+  font-size: 24px;
+  transition: transform 0.4s ease, opacity 0.6s ease, color 0.3s ease; 
+}
+
+.main{
+  font-weight: bold;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.secondary{
+  font-size: 20px;
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.hover-container:hover .main {
+  transform: translateY(-50%);
+  /* color: #ea580c; */
+}
+
+.hover-container:hover .secondary {
+  transform: translateY(50%);
+  opacity: 1;
+}
+
+
+/* .hover-item:hover + .hover-text{
+  opacity: 1;
+  visibility: visible;
+} */
+
+
